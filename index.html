@@ -6,6 +6,8 @@
   <title>Ansu | Software Engineer</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
 </head>
 <body>
 
@@ -48,8 +50,8 @@
       
       <p><strong>Education:</strong></p>
       <ul>
-        <li>Schooling from <strong>St Sebastian's School</strong></li>
-        <li>Pursuing B.Tech in <strong>Computer Science</strong> at Techno India University</li>
+        <li>Schooling from <strong>Delhi Public School</strong></li>
+        <li>Pursuing B.Tech in <strong>Computer Science</strong> at XYZ College</li>
       </ul>
       
       <p><strong>Technical Subjects Studied:</strong></p>
@@ -125,15 +127,35 @@
 
   <!-- CONTACT SECTION -->
   <section id="contact">
-    <h2>Contact Me</h2>
-    <div class="contact-wrapper">
-      <div class="contact-details">
-        <p><strong>Email:</strong> ansukumar80635@gmail.com</p>
-        <p><strong>Phone:</strong> +91-8582868147</p>
-        <p><strong>Linked In:</strong><a href="https://www.linkedin.com/in/ansu-kumar-singh-3b9ba62b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Ansu Kumar Singh</a>
-</p>
-        
+   <center> <h2 class="text-center mb-4">Contact Me</h2></center>
+
+  <div class="contact-container">
+    <div class="contact-bar">
+      <div class="contact-icon" onclick="toggleInfo('email')">
+        <i class="fas fa-envelope"></i>
+        <span class="tooltip">Email</span>
+        <span class="reveal" id="email-info">ansukumar80635@gmail.com</span>
       </div>
+      <div class="contact-icon" onclick="toggleInfo('call')">
+        <i class="fas fa-phone"></i>
+        <span class="tooltip">Phone</span>
+        <span class="reveal" id="call-info">+91-8582868147</span>
+      </div>
+      <a href="https://www.linkedin.com/in/ansu-kumar-singh-3b9ba62b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact-icon" target="_blank">
+        <i class="fab fa-linkedin"></i>
+        <span class="tooltip">LinkedIn</span>
+      </a>
+      <a href="https://www.instagram.com/its_ak_58?igsh=MTQ5MHp5b21hNGtseQ==" class="contact-icon" target="_blank">
+        <i class="fab fa-instagram"></i>
+        <span class="tooltip">Instagram</span>
+      </a>
+      <a href="https://www.facebook.com/share/16KiRdQxw9/" class="contact-icon" target="_blank">
+        <i class="fab fa-facebook"></i>
+        <span class="tooltip">Facebook</span>
+      </a>
+    </div>
+
+
       <form action="https://formspree.io/f/xzzgbyzw" method="POST">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="_replyto" placeholder="Your Email" required />
