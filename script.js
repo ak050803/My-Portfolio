@@ -77,3 +77,13 @@ modal.addEventListener("click", (event) => {
     closeModal();
   }
 });
+
+
+
+function toggleInfo(type) {
+  const el = document.getElementById(`${type}-info`);
+  el.style.display = 'block';
+  setTimeout(() => {
+    el.style.display = 'none';
+  }, 3000);
+}
